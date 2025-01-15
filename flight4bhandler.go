@@ -6,6 +6,7 @@ package dtls
 import (
 	"bytes"
 	"context"
+	"fmt"
 
 	"github.com/pion/dtls/v3/pkg/crypto/prf"
 	"github.com/pion/dtls/v3/pkg/protocol"
@@ -50,9 +51,11 @@ func flight4bParse(_ context.Context, _ flightConn, state *State, cache *handsha
 func flight4bGenerate(_ flightConn, state *State, cache *handshakeCache, cfg *handshakeConfig) ([]*packet, *alert.Alert, error) {
 	var pkts []*packet
 
-	extensions := []extension.Extension{&extension.RenegotiationInfo{
-		RenegotiatedConnection: 0,
-	}}
+	// extensions := []extension.Extension{&extension.RenegotiationInfo{
+	// 	RenegotiatedConnection: 0,
+	// }}
+	extensions := []extension.Extension{}
+	fmt.Println("DPTechnics no-renegotiation extension active")
 	if (cfg.extendedMasterSecret == RequestExtendedMasterSecret ||
 		cfg.extendedMasterSecret == RequireExtendedMasterSecret) && state.extendedMasterSecret {
 		extensions = append(extensions, &extension.UseExtendedMasterSecret{
