@@ -55,7 +55,7 @@ func flight4bGenerate(_ flightConn, state *State, cache *handshakeCache, cfg *ha
 	// 	RenegotiatedConnection: 0,
 	// }}
 	extensions := []extension.Extension{}
-	fmt.Println("DPTechnics no-renegotiation extension active")
+	fmt.Println("DPTechnics no-renegotiation extension active (flight4bhandler.go)")
 	if (cfg.extendedMasterSecret == RequestExtendedMasterSecret ||
 		cfg.extendedMasterSecret == RequireExtendedMasterSecret) && state.extendedMasterSecret {
 		extensions = append(extensions, &extension.UseExtendedMasterSecret{

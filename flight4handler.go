@@ -7,6 +7,7 @@ import (
 	"context"
 	"crypto/rand"
 	"crypto/x509"
+	"fmt"
 
 	"github.com/pion/dtls/v3/internal/ciphersuite"
 	"github.com/pion/dtls/v3/pkg/crypto/clientcertificate"
@@ -227,9 +228,11 @@ func flight4Parse(ctx context.Context, c flightConn, state *State, cache *handsh
 }
 
 func flight4Generate(_ flightConn, state *State, _ *handshakeCache, cfg *handshakeConfig) ([]*packet, *alert.Alert, error) { //nolint:gocognit
-	extensions := []extension.Extension{&extension.RenegotiationInfo{
-		RenegotiatedConnection: 0,
-	}}
+	// extensions := []extension.Extension{&extension.RenegotiationInfo{
+	// 	RenegotiatedConnection: 0,
+	// }}
+	extensions := []extension.Extension{}
+	fmt.Println("DPTechnics no-renegotiation extension active (flight4handler.go)")
 	if (cfg.extendedMasterSecret == RequestExtendedMasterSecret ||
 		cfg.extendedMasterSecret == RequireExtendedMasterSecret) && state.extendedMasterSecret {
 		extensions = append(extensions, &extension.UseExtendedMasterSecret{
