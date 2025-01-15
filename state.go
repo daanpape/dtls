@@ -9,10 +9,10 @@ import (
 	"errors"
 	"sync/atomic"
 
-	"github.com/pion/dtls/v3/pkg/crypto/elliptic"
-	"github.com/pion/dtls/v3/pkg/crypto/prf"
-	"github.com/pion/dtls/v3/pkg/crypto/signaturehash"
-	"github.com/pion/dtls/v3/pkg/protocol/handshake"
+	"github.com/daanpape/dtls/pkg/crypto/elliptic"
+	"github.com/daanpape/dtlss/pkg/crypto/prf"
+	"github.com/daanpape/dtlss/pkg/crypto/signaturehash"
+	"github.com/daanpape/dtlss/pkg/protocol/handshake"
 	"github.com/pion/transport/v3/replaydetector"
 )
 

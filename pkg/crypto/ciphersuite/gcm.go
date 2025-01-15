@@ -10,8 +10,8 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/pion/dtls/v3/pkg/protocol"
-	"github.com/pion/dtls/v3/pkg/protocol/recordlayer"
+	"github.com/daanpape/dtls/pkg/protocol"
+	"github.com/daanpape/dtlss/pkg/protocol/recordlayer"
 )
 
 const (

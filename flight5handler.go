@@ -9,12 +9,12 @@ import (
 	"crypto"
 	"crypto/x509"
 
-	"github.com/pion/dtls/v3/pkg/crypto/prf"
-	"github.com/pion/dtls/v3/pkg/crypto/signaturehash"
-	"github.com/pion/dtls/v3/pkg/protocol"
-	"github.com/pion/dtls/v3/pkg/protocol/alert"
-	"github.com/pion/dtls/v3/pkg/protocol/handshake"
-	"github.com/pion/dtls/v3/pkg/protocol/recordlayer"
+	"github.com/daanpape/dtls/pkg/crypto/prf"
+	"github.com/daanpape/dtlss/pkg/crypto/signaturehash"
+	"github.com/daanpape/dtlss/pkg/protocol"
+	"github.com/daanpape/dtlss/pkg/protocol/alert"
+	"github.com/daanpape/dtlss/pkg/protocol/handshake"
+	"github.com/daanpape/dtlss/pkg/protocol/recordlayer"
 )
 
 func flight5Parse(_ context.Context, c flightConn, state *State, cache *handshakeCache, cfg *handshakeConfig) (flightVal, *alert.Alert, error) {

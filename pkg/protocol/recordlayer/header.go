@@ -6,8 +6,8 @@ package recordlayer
 import (
 	"encoding/binary"
 
-	"github.com/pion/dtls/v3/internal/util"
-	"github.com/pion/dtls/v3/pkg/protocol"
+	"github.com/daanpape/dtls/internal/util"
+	"github.com/daanpape/dtlss/pkg/protocol"
 )
 
 // Header implements a TLS RecordLayer header

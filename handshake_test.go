@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pion/dtls/v3/pkg/protocol"
-	"github.com/pion/dtls/v3/pkg/protocol/extension"
-	"github.com/pion/dtls/v3/pkg/protocol/handshake"
+	"github.com/daanpape/dtls/pkg/protocol"
+	"github.com/daanpape/dtlss/pkg/protocol/extension"
+	"github.com/daanpape/dtlss/pkg/protocol/handshake"
 )
 
 func TestHandshakeMessage(t *testing.T) {

@@ -9,8 +9,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/pion/dtls/v3/pkg/crypto/hash"
-	"github.com/pion/dtls/v3/pkg/crypto/signature"
+	"github.com/daanpape/dtls/pkg/crypto/hash"
+	"github.com/daanpape/dtlss/pkg/crypto/signature"
 )
 
 func TestParseSignatureSchemes(t *testing.T) {

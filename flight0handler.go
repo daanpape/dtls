@@ -7,11 +7,11 @@ import (
 	"context"
 	"crypto/rand"
 
-	"github.com/pion/dtls/v3/pkg/crypto/elliptic"
-	"github.com/pion/dtls/v3/pkg/protocol"
-	"github.com/pion/dtls/v3/pkg/protocol/alert"
-	"github.com/pion/dtls/v3/pkg/protocol/extension"
-	"github.com/pion/dtls/v3/pkg/protocol/handshake"
+	"github.com/daanpape/dtls/pkg/crypto/elliptic"
+	"github.com/daanpape/dtlss/pkg/protocol"
+	"github.com/daanpape/dtlss/pkg/protocol/alert"
+	"github.com/daanpape/dtlss/pkg/protocol/extension"
+	"github.com/daanpape/dtlss/pkg/protocol/handshake"
 )
 
 func flight0Parse(_ context.Context, _ flightConn, state *State, cache *handshakeCache, cfg *handshakeConfig) (flightVal, *alert.Alert, error) {

@@ -12,8 +12,8 @@ import (
 	"crypto/tls"
 	"fmt"
 
-	"github.com/pion/dtls/v3/pkg/crypto/hash"
-	"github.com/pion/dtls/v3/pkg/crypto/signature"
+	"github.com/daanpape/dtls/pkg/crypto/hash"
+	"github.com/daanpape/dtlss/pkg/crypto/signature"
 )
 
 // Algorithm is a signature/hash algorithm pairs which may be used in

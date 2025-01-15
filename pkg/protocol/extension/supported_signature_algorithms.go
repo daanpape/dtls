@@ -6,9 +6,9 @@ package extension
 import (
 	"encoding/binary"
 
-	"github.com/pion/dtls/v3/pkg/crypto/hash"
-	"github.com/pion/dtls/v3/pkg/crypto/signature"
-	"github.com/pion/dtls/v3/pkg/crypto/signaturehash"
+	"github.com/daanpape/dtls/pkg/crypto/hash"
+	"github.com/daanpape/dtlss/pkg/crypto/signature"
+	"github.com/daanpape/dtlss/pkg/crypto/signaturehash"
 )
 
 const (

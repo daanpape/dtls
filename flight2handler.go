@@ -7,10 +7,10 @@ import (
 	"bytes"
 	"context"
 
-	"github.com/pion/dtls/v3/pkg/protocol"
-	"github.com/pion/dtls/v3/pkg/protocol/alert"
-	"github.com/pion/dtls/v3/pkg/protocol/handshake"
-	"github.com/pion/dtls/v3/pkg/protocol/recordlayer"
+	"github.com/daanpape/dtls/pkg/protocol"
+	"github.com/daanpape/dtlss/pkg/protocol/alert"
+	"github.com/daanpape/dtlss/pkg/protocol/handshake"
+	"github.com/daanpape/dtlss/pkg/protocol/recordlayer"
 )
 
 func flight2Parse(ctx context.Context, c flightConn, state *State, cache *handshakeCache, cfg *handshakeConfig) (flightVal, *alert.Alert, error) {

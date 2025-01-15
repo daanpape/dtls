@@ -10,12 +10,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pion/dtls/v3/internal/ciphersuite"
-	"github.com/pion/dtls/v3/pkg/crypto/elliptic"
-	"github.com/pion/dtls/v3/pkg/crypto/selfsign"
-	"github.com/pion/dtls/v3/pkg/crypto/signaturehash"
-	"github.com/pion/dtls/v3/pkg/protocol/alert"
-	"github.com/pion/dtls/v3/pkg/protocol/handshake"
+	"github.com/daanpape/dtls/internal/ciphersuite"
+	"github.com/daanpape/dtlss/pkg/crypto/elliptic"
+	"github.com/daanpape/dtlss/pkg/crypto/selfsign"
+	"github.com/daanpape/dtlss/pkg/crypto/signaturehash"
+	"github.com/daanpape/dtlss/pkg/protocol/alert"
+	"github.com/daanpape/dtlss/pkg/protocol/handshake"
 	"github.com/pion/transport/v3/test"
 )
 

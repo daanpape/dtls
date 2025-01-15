@@ -6,10 +6,10 @@ package dtls
 import (
 	"crypto/rand"
 
-	"github.com/pion/dtls/v3/pkg/protocol"
-	"github.com/pion/dtls/v3/pkg/protocol/extension"
-	"github.com/pion/dtls/v3/pkg/protocol/handshake"
-	"github.com/pion/dtls/v3/pkg/protocol/recordlayer"
+	"github.com/daanpape/dtls/pkg/protocol"
+	"github.com/daanpape/dtlss/pkg/protocol/extension"
+	"github.com/daanpape/dtlss/pkg/protocol/handshake"
+	"github.com/daanpape/dtlss/pkg/protocol/recordlayer"
 )
 
 // RandomCIDGenerator is a random Connection ID generator where CID is the

@@ -7,8 +7,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/pion/dtls/v3/internal/ciphersuite"
-	"github.com/pion/dtls/v3/pkg/protocol/handshake"
+	"github.com/daanpape/dtls/internal/ciphersuite"
+	"github.com/daanpape/dtlss/pkg/protocol/handshake"
 )
 
 func TestHandshakeCacheSinglePush(t *testing.T) {

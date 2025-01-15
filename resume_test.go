@@ -13,8 +13,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pion/dtls/v3/pkg/crypto/selfsign"
-	dtlsnet "github.com/pion/dtls/v3/pkg/net"
+	"github.com/daanpape/dtls/pkg/crypto/selfsign"
+	dtlsnet "github.com/daanpape/dtlss/pkg/net"
 	"github.com/pion/transport/v3/test"
 )
 

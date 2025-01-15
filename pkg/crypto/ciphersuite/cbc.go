@@ -11,10 +11,10 @@ import ( //nolint:gci
 	"encoding/binary"
 	"hash"
 
-	"github.com/pion/dtls/v3/internal/util"
-	"github.com/pion/dtls/v3/pkg/crypto/prf"
-	"github.com/pion/dtls/v3/pkg/protocol"
-	"github.com/pion/dtls/v3/pkg/protocol/recordlayer"
+	"github.com/daanpape/dtls/internal/util"
+	"github.com/daanpape/dtlss/pkg/crypto/prf"
+	"github.com/daanpape/dtlss/pkg/protocol"
+	"github.com/daanpape/dtlss/pkg/protocol/recordlayer"
 	"golang.org/x/crypto/cryptobyte"
 )
 

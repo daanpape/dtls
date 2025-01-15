@@ -10,10 +10,10 @@ import (
 	"hash"
 	"sync/atomic"
 
-	"github.com/pion/dtls/v3/pkg/crypto/ciphersuite"
-	"github.com/pion/dtls/v3/pkg/crypto/clientcertificate"
-	"github.com/pion/dtls/v3/pkg/crypto/prf"
-	"github.com/pion/dtls/v3/pkg/protocol/recordlayer"
+	"github.com/daanpape/dtls/pkg/crypto/ciphersuite"
+	"github.com/daanpape/dtlss/pkg/crypto/clientcertificate"
+	"github.com/daanpape/dtlss/pkg/crypto/prf"
+	"github.com/daanpape/dtlss/pkg/protocol/recordlayer"
 )
 
 // TLSEcdheEcdsaWithAes256CbcSha represents a TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA CipherSuite

@@ -9,9 +9,9 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/pion/dtls/v3/pkg/crypto/ccm"
-	"github.com/pion/dtls/v3/pkg/protocol"
-	"github.com/pion/dtls/v3/pkg/protocol/recordlayer"
+	"github.com/daanpape/dtls/pkg/crypto/ccm"
+	"github.com/daanpape/dtlss/pkg/protocol"
+	"github.com/daanpape/dtlss/pkg/protocol/recordlayer"
 )
 
 // CCMTagLen is the length of Authentication Tag
