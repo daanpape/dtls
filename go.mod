@@ -1,4 +1,4 @@
-module github.com/pion/dtls/v3
+module github.com/daanpape/dtls
 
 require (
 	github.com/pion/logging v0.2.2
