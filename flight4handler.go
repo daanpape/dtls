@@ -9,16 +9,16 @@ import (
 	"crypto/x509"
 	"fmt"
 
-	"github.com/pion/dtls/v3/internal/ciphersuite"
-	"github.com/pion/dtls/v3/pkg/crypto/clientcertificate"
-	"github.com/pion/dtls/v3/pkg/crypto/elliptic"
-	"github.com/pion/dtls/v3/pkg/crypto/prf"
-	"github.com/pion/dtls/v3/pkg/crypto/signaturehash"
-	"github.com/pion/dtls/v3/pkg/protocol"
-	"github.com/pion/dtls/v3/pkg/protocol/alert"
-	"github.com/pion/dtls/v3/pkg/protocol/extension"
-	"github.com/pion/dtls/v3/pkg/protocol/handshake"
-	"github.com/pion/dtls/v3/pkg/protocol/recordlayer"
+	"github.com/daanpape/dtls/internal/ciphersuite"
+	"github.com/daanpape/dtls/pkg/crypto/clientcertificate"
+	"github.com/daanpape/dtls/pkg/crypto/elliptic"
+	"github.com/daanpape/dtls/pkg/crypto/prf"
+	"github.com/daanpape/dtls/pkg/crypto/signaturehash"
+	"github.com/daanpape/dtls/pkg/protocol"
+	"github.com/daanpape/dtls/pkg/protocol/alert"
+	"github.com/daanpape/dtls/pkg/protocol/extension"
+	"github.com/daanpape/dtls/pkg/protocol/handshake"
+	"github.com/daanpape/dtls/pkg/protocol/recordlayer"
 )
 
 func flight4Parse(ctx context.Context, c flightConn, state *State, cache *handshakeCache, cfg *handshakeConfig) (flightVal, *alert.Alert, error) { //nolint:gocognit
