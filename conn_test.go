@@ -2319,7 +2319,8 @@ func TestRenegotationInfo(t *testing.T) { //nolint:cyclop
 			}
 
 			assert.True(t, test.ExpectRenegotiationInfo == actualNegotationInfo,
-				"NegotationInfo state in ServerHello is incorrect: expected(%t) actual(%t)", test.ExpectRenegotiationInfo, actualNegotationInfo)
+				"NegotationInfo state in ServerHello is incorrect: expected(%t) actual(%t)",
+				test.ExpectRenegotiationInfo, actualNegotationInfo)
 		})
 	}
 }
